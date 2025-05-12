@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Treasures | Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Tiny Treasures</h1>
+                <p>Fashion for all ages</p>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Shop</h1>
+        </div>
+    </section>
+
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-grid">
+                <div class="shop-sidebar">
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="active" data-category="all">All Products</a></li>
+                            <li><a href="#" data-category="girls">Girls' Clothing</a></li>
+                            <li><a href="#" data-category="boys">Boys' Clothing</a></li>
+                            <li><a href="#" data-category="ladies">Ladies' Clothing</a></li>
+                            <li><a href="#" data-category="accessories">Accessories</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Price Range</h3>
+                        <div class="price-slider">
+                            <input type="range" min="0" max="100" value="100" class="slider" id="priceRange">
+                            <div class="price-range-display">
+                                <span>$0</span>
+                                <span id="priceValue">$100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Size</h3>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="xs">XS</button>
+                            <button class="size-btn" data-size="s">S</button>
+                            <button class="size-btn" data-size="m">M</button>
+                            <button class="size-btn" data-size="l">L</button>
+                            <button class="size-btn" data-size="xl">XL</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Color</h3>
+                        <div class="color-options">
+                            <button class="color-btn" style="background-color: #ff0000;" data-color="red"></button>
+                            <button class="color-btn" style="background-color: #0000ff;" data-color="blue"></button>
+                            <button class="color-btn" style="background-color: #00ff00;" data-color="green"></button>
+                            <button class="color-btn" style="background-color: #ffff00;" data-color="yellow"></button>
+                            <button class="color-btn" style="background-color: #ff00ff;" data-color="pink"></button>
+                            <button class="color-btn" style="background-color: #000000;" data-color="black"></button>
+                            <button class="color-btn" style="background-color: #ffffff; border: 1px solid #ddd;" data-color="white"></button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn" id="applyFilters">Apply Filters</button>
+                    <button class="btn-outline" id="resetFilters">Reset Filters</button>
+                </div>
+                
+                <div class="shop-products">
+                    <div class="shop-header">
+                        <div class="product-count">
+                            <p>Showing <span id="productCount">12</span> products</p>
+                        </div>
+                        <div class="sort-options">
+                            <label for="sortBy">Sort by:</label>
+                            <select id="sortBy">
+                                <option value="featured">Featured</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid" id="productsContainer">
+                        <!-- Product cards will be dynamically generated here -->
+                    </div>
+                    
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tiny Treasures</h3>
+                    <p>Quality clothing for children and ladies at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Fashion Street<br>Westlands Sarit Centre, Nairobi <br>Phone: +254 799192029<br>Email: info@tinytreasures.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tiny Treasures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
