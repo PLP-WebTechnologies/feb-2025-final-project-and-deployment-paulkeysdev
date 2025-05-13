@@ -13,6 +13,5 @@ Contact Form: With validation
 Image Slider: For featured products
 Testimonials: Customer reviews section
 
-**Demo**
-View Live Demo ()
+
 
